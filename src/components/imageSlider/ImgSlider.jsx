@@ -28,7 +28,7 @@ export const ImgSlider = () => {
       {movies.map((movie, i) => (
         <ImageContainer key={i} style={{width:"100%"}}>
             <MovieTitle>{movie.original_title}</MovieTitle>
-            <a>
+            <a href="/#">
               <img
                 style={{ width: "100%",height:"500px"}}
                 src={apiConfig.originalImage(movie.backdrop_path)}
